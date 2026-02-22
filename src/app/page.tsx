@@ -3,7 +3,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center bg-gradient-to-br from-green-800 to-green-900">
-        <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920')] bg-cover bg-center opacity-30"></div>
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Quality Landscaping in Belfast</h1>
           <p className="text-xl md:text-2xl text-green-100 mb-8 max-w-2xl">Family-run landscape gardening company serving Belfast and Northern Ireland since 1985. Quality service at competitive rates.</p>
