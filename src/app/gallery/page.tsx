@@ -5,40 +5,27 @@ export const metadata = {
   description: "View our portfolio of completed landscaping projects in Belfast.",
 };
 
-const projects = [
-  { title: "Residential Garden", location: "South Belfast", category: "Garden Design" },
-  { title: "Commercial Premises", location: "City Centre", category: "Maintenance" },
-  { title: "Backyard Renovation", location: "East Belfast", category: "Lawn & Hedges" },
-  { title: "Front Garden Makeover", location: "North Belfast", category: "Design" },
-  { title: "Hedge Installation", location: "West Belfast", category: "Hedges" },
-  { title: "Patio Installation", location: "Lisburn", category: "Hard Landscaping" },
-];
-
 export default function Gallery() {
   return (
     <>
       <section className="py-20 bg-green-700 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold">Our Work</h1>
-          <p className="text-green-100 mt-4 text-xl">A selection of our recent landscaping projects in Belfast</p>
+          <p className="text-green-100 mt-4 text-xl">Portfolio of landscaping projects in Belfast</p>
         </div>
       </section>
 
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-600 text-center mb-12">
+            We have a growing portfolio of successful projects throughout Belfast and Northern Ireland. 
+            Contact us to see more examples of our work and discuss your own project.
+          </p>
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, i) => (
-              <div key={i} className="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end p-6">
-                  <div className="text-white">
-                    <p className="text-sm text-green-300">{project.category}</p>
-                    <h3 className="text-xl font-bold">{project.title}</h3>
-                    <p className="text-sm text-gray-300">{project.location}</p>
-                  </div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  <span className="text-4xl">🏡</span>
-                </div>
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="aspect-square bg-gray-200 rounded-2xl flex items-center justify-center">
+                <span className="text-gray-400">Project {i}</span>
               </div>
             ))}
           </div>

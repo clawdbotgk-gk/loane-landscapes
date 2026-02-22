@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Contact | Loane Landscapes",
-  description: "Get in touch with Loane Landscapes for a free quote in Belfast.",
+  description: "Contact Loane Landscapes for landscaping services in Belfast.",
 };
 
 export default function Contact() {
@@ -9,7 +9,7 @@ export default function Contact() {
       <section className="py-20 bg-green-700 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold">Contact Us</h1>
-          <p className="text-green-100 mt-4 text-xl">Get a free quote for your landscaping project</p>
+          <p className="text-green-100 mt-4 text-xl">Get in touch for a free quote</p>
         </div>
       </section>
 
@@ -18,7 +18,10 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-              <p className="text-gray-600 mb-8">Fill out the form and we'll get back to you within 24 hours.</p>
+              <p className="text-gray-600 mb-8">
+                Contact us at Loane Landscapes for your local gardeners and landscapers in Belfast, Northern Ireland. 
+                For further information, please get in touch with us using the contact form or give us a call.
+              </p>
               
               <form className="space-y-6">
                 <div>
@@ -36,11 +39,10 @@ export default function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
                   <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none">
-                    <option>Lawn Cutting</option>
-                    <option>Hedge Trimming</option>
+                    <option>General Enquiry</option>
+                    <option>Landscaping</option>
                     <option>Garden Maintenance</option>
-                    <option>Landscape Design</option>
-                    <option>Other</option>
+                    <option>Tree Work</option>
                   </select>
                 </div>
                 <div>
@@ -80,7 +82,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">(028) 1234 5678</p>
+                    <p className="text-gray-600">(028) 9062 4127</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -89,15 +91,14 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Hours</h3>
-                    <p className="text-gray-600">Mon - Sat: 8am - 6pm<br/>Sun: Closed</p>
+                    <p className="text-gray-600">Mon - Fri: 9am - 5pm<br/>Sat: By arrangement</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-12 p-6 bg-gray-50 rounded-2xl">
-                <h3 className="font-semibold mb-2">Emergency Services</h3>
-                <p className="text-gray-600 text-sm">For urgent garden clearance or storm damage, call our emergency line.</p>
-                <p className="font-semibold text-green-700 mt-2">(028) 1234 5679</p>
+                <h3 className="font-semibold mb-2">Free Consultation</h3>
+                <p className="text-gray-600 text-sm">We offer free consultations for all landscaping projects. Get in touch to arrange a visit.</p>
               </div>
             </div>
           </div>

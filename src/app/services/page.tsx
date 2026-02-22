@@ -2,39 +2,24 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Services | Loane Landscapes",
-  description: "Explore our landscaping services in Belfast - lawn cutting, hedge trimming, garden design, and more.",
+  description: "Our landscaping and garden maintenance services in Belfast.",
 };
 
 const services = [
   {
-    title: "Lawn Cutting",
-    description: "Regular lawn maintenance to keep your grass healthy, lush, and well-maintained throughout the growing season.",
-    includes: ["Weekly/bi-weekly cuts", "Edge trimming", "Grass collection", "Seasonal fertilisation"],
-  },
-  {
-    title: "Hedge Trimming",
-    description: "Professional hedge shaping and maintenance for neat, well-defined boundaries.",
-    includes: ["Hedge cutting", "Shape trimming", "Bush pruning", "Dead wood removal"],
+    title: "Landscaping",
+    description: "We have a growing portfolio of successful projects and a good reputation. Feel free to contact us for a free consultation, whatever the size of job. The visit will include advice on maximising space, required materials, suitable plants etc. We create a personalised layout plan for each garden based on our clients' needs and desires.",
+    includes: ["Free consultation", "Personalised design plans", "Garden construction", "Patios & driveways", "Planting schemes"],
   },
   {
     title: "Garden Maintenance",
-    description: "Complete garden upkeep services to keep your outdoor space looking its best.",
-    includes: ["Weed control", "Planting", "Mulching", "General cleanup"],
+    description: "We have a well established maintenance team throughout Belfast with services that include competitively priced grass cutting in any area, pruning, and general garden up-keep.",
+    includes: ["Grass cutting", "Hedge trimming", "Pruning", "General garden upkeep", "Regular maintenance contracts"],
   },
   {
-    title: "Landscape Design",
-    description: "Transform your outdoor space with our professional landscape design services.",
-    includes: ["Garden planning", "Plant selection", "Hard landscaping", "3D visualizations"],
-  },
-  {
-    title: "Tree Surgery",
-    description: "Professional tree care including pruning, trimming, and removal services.",
-    includes: ["Tree pruning", "Crown reduction", "Stump grinding", "Storm damage cleanup"],
-  },
-  {
-    title: "Patio & Driveways",
-    description: "Installation, driveways, of patios and other hard landscaping features.",
-    includes: ["Patio laying", "Driveway installation", "Block paving", "Resin bonding"],
+    title: "Tree Work",
+    description: "Professional tree surgery services including pruning, trimming, and removal when necessary.",
+    includes: ["Tree pruning", "Crown reduction", "Tree removal", "Stump grinding", "Storm damage cleanup"],
   },
 ];
 
@@ -44,7 +29,7 @@ export default function Services() {
       <section className="py-20 bg-green-700 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold">Our Services</h1>
-          <p className="text-green-100 mt-4 text-xl">Comprehensive landscaping solutions for Belfast homes and businesses</p>
+          <p className="text-green-100 mt-4 text-xl">Landscaping & Maintenance in Belfast</p>
         </div>
       </section>
 
@@ -53,7 +38,7 @@ export default function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <div key={i} className="bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-lg transition">
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <ul className="space-y-2">
                   {service.includes.map((item, j) => (
