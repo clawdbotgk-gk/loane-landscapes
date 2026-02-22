@@ -35,9 +35,7 @@ export default function About() {
                 throughout Belfast and Northern Ireland.
               </p>
             </div>
-            <div className="bg-gray-200 rounded-2xl h-80 flex items-center justify-center">
-              <span className="text-gray-400">Company Image</span>
-            </div>
+            <img src="/about.jpg" alt="Loane Landscapes Team" className="rounded-2xl w-full h-80 object-cover" />
           </div>
         </div>
       </section>
